@@ -10,7 +10,7 @@
         header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
         header p { font-size: 1.2rem; margin-top: 10px; color: #e0f2f1; }
         nav { background: #004d40; padding: 12px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: bold; transition: color 0.3s; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
         nav a:hover { color: #80cbc4; text-decoration: underline; }
         .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
         section { background: #fff; padding: 40px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
@@ -21,11 +21,15 @@
         .icon-list li { margin-bottom: 15px; padding-left: 35px; position: relative; font-size: 1.05rem; }
         .icon-list li span { position: absolute; left: 0; top: 0; font-size: 1.3rem; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px; }
-        .card { background: #f9fbfb; padding: 20px; border-radius: 8px; border-top: 4px solid #00796b; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.3s, box-shadow 0.3s; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 25px; }
+        
+        /* Style des cartes */
+        .card { background: #f9fbfb; padding: 20px; border-radius: 8px; border-top: 4px solid #00796b; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-        .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; }
-        .card h3 { margin-top: 5px; color: #004d40; font-size: 1.1rem; }
+        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 15px; order: 1; }
+        .card h3 { margin: 0 0 10px 0; color: #004d40; font-size: 1.1rem; order: 2; }
+        .card p { margin: 0; order: 3; font-size: 0.95rem; color: #555; }
+
         .btn-whatsapp { display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; margin-top: 15px; box-shadow: 0 3px 10px rgba(37,211,102,0.3); transition: background-color 0.3s; }
         .btn-whatsapp:hover { background-color: #1ebe5d; }
         footer { background: #1a1a1a; color: #bbb; text-align: center; padding: 30px 20px; font-size: 0.9rem; margin-top: 40px; }
@@ -47,7 +51,7 @@
     <nav>
         <a href="#accueil">Accueil</a>
         <a href="#apropos">À propos</a>
-        <a href="#actions">Actions</a>
+        <a href="#actions">Réalisations</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -69,27 +73,76 @@
         </section>
 
         <section id="actions">
-            <h2>Nos Réalisations</h2>
+            <h2>Nos Réalisations & Activités sur le Terrain</h2>
             <div class="grid">
+                <!-- Menuiserie 1 -->
                 <div class="card">
-                    <img src="menuiserie.jpg" alt="Menuiserie">
-                    <h3>Formations & Menuiserie</h3>
-                    <p>Remise de brevets et de kits pratiques à nos lauréats formés en menuiserie.</p>
+                    <img src="Menuiserie.jpg" alt="Menuiserie OJUD">
+                    <h3>Formations en Menuiserie</h3>
+                    <p>Remise de brevets et de kits pratiques à nos lauréats formés en menuiserie pour leur insertion professionnelle.</p>
                 </div>
+
+                <!-- Menuiserie 2 -->
                 <div class="card">
-                    <img src="couture.jpg" alt="Couture">
-                    <h3>Coupe-Couture & Épargne</h3>
-                    <p>Sessions de formation en coupe-couture et gestion des fonds d'épargne solidaire.</p>
+                    <img src="menuiserie2.jpg" alt="Atelier menuiserie">
+                    <h3>Travaux & Pratique en Atelier</h3>
+                    <p>Nos jeunes apprenants en plein exercice pratique de fabrication et de modélisation en menuiserie.</p>
                 </div>
+
+                <!-- Couture & Remise de brevets -->
                 <div class="card">
-                    <img src="droits_femmes.jpg" alt="Droits de la femme">
+                    <img src="couture.jpg" alt="Coupe-Couture et Brevets">
+                    <h3>Coupe-Couture & Remise de Brevets</h3>
+                    <p>Sessions de formation pratique en coupe-couture axées sur l'autonomisation des femmes et des filles, couronnées par la remise de brevets officiels.</p>
+                </div>
+
+                <!-- Épargne et Crédit 1 -->
+                <div class="card">
+                    <img src="Epargne et crédit.jpg" alt="Épargne et crédit AKIBA">
+                    <h3>AKIBA / Épargne & Crédit (Femmes)</h3>
+                    <p>Mise en place de mutuelles de solidarité et de fonds d'épargne-crédit pour renforcer l'autonomisation financière des femmes de la communauté.</p>
+                </div>
+
+                <!-- Épargne et Crédit 2 -->
+                <div class="card">
+                    <img src="Epargne et crédit2.jpg" alt="Dynamique d'épargne">
+                    <h3>Activités de Crédit Communautaire</h3>
+                    <p>Séances de sensibilisation, de suivi et de gestion des cotisations au sein des groupements d'épargne solidaire.</p>
+                </div>
+
+                <!-- Droits des femmes -->
+                <div class="card">
+                    <img src="Droits-femmes.jpg" alt="Droits de la femme">
                     <h3>Droits Fonciers & Héritage</h3>
-                    <p>Sensibilisation communautaire sur les droits de la femme concernant l'héritage de la terre.</p>
+                    <p>Sensibilisation communautaire menée en partenariat avec l'association <strong>ASIPROPED</strong> sur les droits de la femme et l'accès à l'héritage de la terre.</p>
                 </div>
+
+                <!-- Service Matériel / Traiteur (Activité phare génératrice de revenus) -->
+                <div class="card">
+                    <img src="Service matériels.jpg" alt="Service traiteur et matériel">
+                    <h3>Services Traiteur & Location de Matériel</h3>
+                    <p>Activité phare de l'association : mise à disposition d'ustensiles de cuisine et services traiteur professionnels pour les mariages et diverses cérémonies, soutenant notre autonomie financière.</p>
+                </div>
+
+                <!-- Reboisement 1 -->
                 <div class="card">
                     <img src="reboisement.jpg" alt="Reboisement">
-                    <h3>Reboisement</h3>
-                    <p>Activités de pépinières et de reboisement menées sur le terrain avec la participation des membres.</p>
+                    <h3>Campagne de Reboisement</h3>
+                    <p>Activités de pépinières et de plantation d'arbres menées sur le terrain pour la protection de l'environnement.</p>
+                </div>
+
+                <!-- Reboisement 2 -->
+                <div class="card">
+                    <img src="reboisement2.jpg" alt="Pépinières forestières">
+                    <h3>Entretien des Pépinières</h3>
+                    <p>Suivi et gestion des jeunes plants forestiers par les membres engagés de l'OJUD.</p>
+                </div>
+
+                <!-- Reboisement 3 -->
+                <div class="card">
+                    <img src="reboisement3.jpg" alt="Action environnementale">
+                    <h3>Mobilisation Environnementale</h3>
+                    <p>Participation active de la communauté locale aux actions de reboisement et de lutte contre l'érosion.</p>
                 </div>
             </div>
         </section>
