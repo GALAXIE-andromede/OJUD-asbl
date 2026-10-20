@@ -2,100 +2,105 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>OJUD asbl</title>
+    <title>OJUD asbl - Œuvre des Jeunes Unis pour le Développement</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f9f9f9; }
-        header { background: #004d40; color: #fff; padding: 30px 20px; text-align: center; }
-        .logo-container img { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; margin-bottom: 10px; }
-        header h1 { margin: 0; font-size: 2.2rem; }
-        header p { font-size: 1.1rem; margin-top: 10px; color: #e0f2f1; }
-        nav { background: #00796b; padding: 10px; text-align: center; position: sticky; top: 0; }
-        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; background: #fff; }
-        section { padding: 30px 0; border-bottom: 1px solid #eee; }
-        h2 { color: #004d40; border-bottom: 2px solid #00796b; padding-bottom: 8px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { background: #f4f6f6; padding: 20px; border-radius: 8px; border-left: 5px solid #00796b; }
-        .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
-        .card h3 { margin-top: 5px; color: #004d40; }
-        footer { background: #222; color: #fff; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
-        footer p { margin: 5px 0; }
-        .legal { color: #aaa; font-size: 0.8rem; margin-top: 15px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #f4f7f6; }
+        header { background: linear-gradient(135deg, #004d40, #00796b); color: #fff; padding: 40px 20px; text-align: center; box-shadow: inset 0 -5px 10px rgba(0,0,0,0.1); }
+        .logo-container img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 15px; }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; margin-top: 10px; color: #e0f2f1; }
+        nav { background: #004d40; padding: 12px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav a { color: #fff; text-decoration: none; margin: 0 20px; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #80cbc4; text-decoration: underline; }
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        section { background: #fff; padding: 40px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { color: #004d40; border-bottom: 3px solid #00796b; padding-bottom: 10px; margin-top: 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 25px; }
+        .card { background: #f9fbfb; padding: 20px; border-radius: 8px; border-top: 4px solid #00796b; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.3s, box-shadow 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; margin-bottom: 12px; }
+        .card h3 { margin-top: 5px; color: #004d40; font-size: 1.1rem; }
+        .btn-whatsapp { display: inline-block; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: bold; margin-top: 15px; box-shadow: 0 3px 10px rgba(37,211,102,0.3); transition: background-color 0.3s; }
+        .btn-whatsapp:hover { background-color: #1ebe5d; }
+        footer { background: #1a1a1a; color: #bbb; text-align: center; padding: 30px 20px; font-size: 0.9rem; margin-top: 40px; }
+        footer p { margin: 6px 0; }
+        .legal { color: #777; font-size: 0.8rem; margin-top: 15px; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="logo.jpg" alt="Logo">
+            <img src="logo.jpg" alt="Logo OJUD">
         </div>
         <h1>OJUD asbl</h1>
-        <p>Oeuvre des Jeunes Unis pour le Developpement</p>
-        <p>Promouvoir l'autonomisation et le developpement durable au Sud-Kivu</p>
+        <p>Œuvre des Jeunes Unis pour le Développement</p>
+        <p><em>Promouvoir l'autonomisation et le développement durable au Sud-Kivu</em></p>
     </header>
 
     <nav>
         <a href="#accueil">Accueil</a>
-        <a href="#apropos">A propos</a>
+        <a href="#apropos">À propos</a>
         <a href="#actions">Actions</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <div class="container" id="accueil">
-        <section>
-            <h2>Bienvenue a l'OJUD</h2>
-            <p>Creee le 24 fevrier 2014 a Kavumu Centre, groupement de Bugorhe, territoire de Kabare, province du Sud-Kivu en RDC, l'OJUD est une Association Sans But Lucratif engagee dans la lutte contre la pauvrete et l'autonomisation des couches vulnerables.</p>
+    <div class="container">
+        <section id="accueil">
+            <h2>Bienvenue à l'OJUD</h2>
+            <p>Créée le 24 février 2014 à Kavumu Centre, groupement de Bugorhe, territoire de Kabare, province du Sud-Kivu en RDC, l'OJUD est une Association Sans But Lucratif engagée dans la lutte contre la pauvreté et l'autonomisation des couches vulnérables.</p>
         </section>
 
         <section id="apropos">
             <h2>Notre Vision</h2>
-            <p>Apporter des solutions pratiques et perennes pour ameliorer les conditions de vie des populations a faible revenu. Nos axes majeurs :</p>
+            <p>Apporter des solutions pratiques et pérennes pour améliorer les conditions de vie des populations à faible revenu. Nos axes majeurs :</p>
             <ul>
-                <li>Autonomisation economique : Formations professionnelles (menuiserie, coupe-couture).</li>
-                <li>Developpement communautaire : Initiatives locales et encadrement des jeunes.</li>
-                <li>Protection de l'environnement : Campagnes de reboisement.</li>
-                <li>Justice sociale : Vulgarisation des droits fonciers et successoraux pour les femmes.</li>
+                <li><strong>Autonomisation économique :</strong> Formations professionnelles (menuiserie, coupe-couture) et appui aux activités génératrices de revenus.</li>
+                <li><strong>Développement communautaire :</strong> Initiatives locales, assemblées générales et encadrement des jeunes.</li>
+                <li><strong>Protection de l'environnement :</strong> Campagnes de pépinières et de reboisement.</li>
+                <li><strong>Justice sociale :</strong> Vulgarisation des droits fonciers et successoraux pour les femmes.</li>
             </ul>
         </section>
 
         <section id="actions">
-            <h2>Nos Realisations</h2>
+            <h2>Nos Réalisations</h2>
             <div class="grid">
                 <div class="card">
                     <img src="menuiserie.jpg" alt="Menuiserie">
                     <h3>Formations & Menuiserie</h3>
-                    <p>Remise de brevets et de kits pratiques a nos laureats formes en menuiserie.</p>
+                    <p>Remise de brevets et de kits pratiques à nos lauréats formés en menuiserie.</p>
                 </div>
                 <div class="card">
                     <img src="couture.jpg" alt="Couture">
-                    <h3>Coupe-Couture & Epargne</h3>
-                    <p>Sessions de formation en coupe-couture et gestion des fonds d'epargne solidaire.</p>
+                    <h3>Coupe-Couture & Épargne</h3>
+                    <p>Sessions de formation en coupe-couture et gestion des fonds d'épargne solidaire.</p>
                 </div>
                 <div class="card">
-                    <img src="droits_femmes.jpg" alt="Droits">
-                    <h3>Droits Fonciers & Heritage</h3>
-                    <p>Sensibilisation communautaire sur les droits de la femme concernant l'heritage de la terre.</p>
+                    <img src="droits_femmes.jpg" alt="Droits de la femme">
+                    <h3>Droits Fonciers & Héritage</h3>
+                    <p>Sensibilisation communautaire sur les droits de la femme concernant l'héritage de la terre.</p>
                 </div>
                 <div class="card">
                     <img src="reboisement.jpg" alt="Reboisement">
                     <h3>Reboisement</h3>
-                    <p>Activites de pepinieres et de reboisement menees sur le terrain avec les membres.</p>
+                    <p>Activités de pépinières et de reboisement menées sur le terrain avec la participation des membres.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contactez-nous</h2>
-            <p>Siege social : Kavumu Centre (en bas du terrain de football), Groupement de Bugorhe, Territoire de Kabare, Sud-Kivu, RDC.</p>
-            <p>E-mail : contact@ojudrdc.org / ojudrdc@gmail.com</p>
-            <p>Telephone / WhatsApp : +243 850 800 833 / +243 853 618 249</p>
+            <p><strong>Siège social :</strong> Kavumu Centre (en bas du terrain de football), Groupement de Bugorhe, Territoire de Kabare, Sud-Kivu, RDC.</p>
+            <p><strong>E-mail :</strong> contact@ojudrdc.org / ojudrdc@gmail.com</p>
+            <p><strong>Téléphone / WhatsApp :</strong> +243 852 522 083</p>
+            <a href="https://wa.me/243852522083" class="btn-whatsapp" target="_blank">Discuter sur WhatsApp</a>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 OJUD asbl. Tous droits reserves.</p>
-        <p>Republique Democratique du Congo — Sud-Kivu — Kabare — Bugorhe</p>
-        <p class="legal">Association enregistree sous le N° JUST : 112/DP-SKV/CA/5695/2020</p>
+        <p>&copy; 2026 OJUD asbl. Tous droits réservés.</p>
+        <p>République Démocratique du Congo — Sud-Kivu — Kabare — Bugorhe</p>
+        <p class="legal">Association enregistrée sous le N° JUST : 112/DP-SKV/CA/5695/2020</p>
     </footer>
 
 </body>
